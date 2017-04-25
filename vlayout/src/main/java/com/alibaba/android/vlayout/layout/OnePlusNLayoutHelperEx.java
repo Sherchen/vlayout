@@ -86,6 +86,9 @@ public class OnePlusNLayoutHelperEx extends AbstractFullFillLayoutHelper {
 
     private View[] mChildrenViews;
 
+    /**
+     * 每列宽度的权重比，总权重是100
+     */
     private float[] mColWeights = new float[0];
 
     private float mRowWeight = Float.NaN;

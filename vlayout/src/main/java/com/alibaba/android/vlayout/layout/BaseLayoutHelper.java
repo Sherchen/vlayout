@@ -50,6 +50,10 @@ public abstract class BaseLayoutHelper extends MarginLayoutHelper {
 
     int mBgColor;
 
+    /**
+     * 行宽和行高的比例，整个控件的高度取决于LayoutParams.Height，如果只有一行的时候，优先级高于
+     * LayoutParams.Height
+     */
     float mAspectRatio = Float.NaN;
 
     public BaseLayoutHelper() {

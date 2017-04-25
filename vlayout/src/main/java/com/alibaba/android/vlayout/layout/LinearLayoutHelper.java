@@ -37,6 +37,7 @@ import static android.support.v7.widget.LinearLayoutManager.VERTICAL;
 
 /**
  * LayoutHelper layouts views as linear/ListView
+ * @Sherchen,因为VirtualLayoutManager的Orientation是Vertical,所以LinearLayoutHelper默认的Orientation是Vertical
  */
 public class LinearLayoutHelper extends BaseLayoutHelper {
 

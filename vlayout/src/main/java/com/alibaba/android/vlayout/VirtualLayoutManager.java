@@ -787,6 +787,7 @@ public class VirtualLayoutManager extends ExposeLinearLayoutManagerEx implements
 
         public int zIndex = 0;
 
+        /**@sherchen 和 LayoutHelper的setAspectRatio类似**/
         public float mAspectRatio = Float.NaN;
 
         private int mOriginWidth = INVALIDE_SIZE;

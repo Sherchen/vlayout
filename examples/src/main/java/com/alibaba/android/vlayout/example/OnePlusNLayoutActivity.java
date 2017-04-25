@@ -205,10 +205,10 @@ public class OnePlusNLayoutActivity extends Activity {
 
         if (GRID_LAYOUT) {
             GridLayoutHelper layoutHelper;
-            layoutHelper = new GridLayoutHelper(4);
+            layoutHelper = new GridLayoutHelper(5);
             layoutHelper.setMargin(0, 10, 0, 10);
             layoutHelper.setHGap(3);
-            layoutHelper.setAspectRatio(4f);
+            layoutHelper.setAspectRatio(5f);
             adapters.add(new SubAdapter(this, layoutHelper, 8));
         }
 
@@ -225,7 +225,7 @@ public class OnePlusNLayoutActivity extends Activity {
             adapters.add(new SubAdapter(this, layoutHelper, 2));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第一个
             OnePlusNLayoutHelper helper = new OnePlusNLayoutHelper();
             helper.setBgColor(0xff876384);
             helper.setMargin(10, 10, 10, 10);
@@ -244,28 +244,28 @@ public class OnePlusNLayoutActivity extends Activity {
             });
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第2个
             OnePlusNLayoutHelper helper = new OnePlusNLayoutHelper();
             helper.setBgColor(0xff876384);
             helper.setMargin(0, 10, 0, 10);
             adapters.add(new SubAdapter(this, helper, 4));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第3个
             OnePlusNLayoutHelper helper = new OnePlusNLayoutHelper();
             helper.setBgColor(0xff876384);
             helper.setMargin(0, 10, 0, 10);
             adapters.add(new SubAdapter(this, helper, 5));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第4个
             OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
             helper.setBgColor(0xff876384);
             helper.setMargin(0, 10, 0, 10);
             adapters.add(new SubAdapter(this, helper, 5));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第5个
             OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
             helper.setBgColor(0xff876384);
             helper.setMargin(0, 10, 0, 10);
@@ -273,7 +273,7 @@ public class OnePlusNLayoutActivity extends Activity {
             adapters.add(new SubAdapter(this, helper, 5));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第6个
             OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
             helper.setBgColor(0xff876384);
             helper.setMargin(0, 10, 0, 10);
@@ -282,21 +282,21 @@ public class OnePlusNLayoutActivity extends Activity {
             adapters.add(new SubAdapter(this, helper, 5));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第7个
             OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
             helper.setBgColor(0xff876384);
             helper.setMargin(0, 10, 0, 10);
             adapters.add(new SubAdapter(this, helper, 6));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第8个
             OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
             helper.setBgColor(0xff876384);
             helper.setMargin(0, 10, 0, 10);
             adapters.add(new SubAdapter(this, helper, 7));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第9个
             OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
             helper.setBgColor(0xff876384);
             helper.setMargin(0, 10, 0, 10);
@@ -304,7 +304,7 @@ public class OnePlusNLayoutActivity extends Activity {
             adapters.add(new SubAdapter(this, helper, 7));
         }
 
-        if (ONEN_LAYOUT) {
+        if (ONEN_LAYOUT) {//第10个
             OnePlusNLayoutHelperEx helper = new OnePlusNLayoutHelperEx();
             helper.setBgColor(0xffed7612);
 //            helper.setMargin(10, 10, 10, 10);
@@ -324,7 +324,7 @@ public class OnePlusNLayoutActivity extends Activity {
             });
         }
 
-        if (STICKY_LAYOUT) {
+        if (STICKY_LAYOUT) {//65
             StickyLayoutHelper layoutHelper = new StickyLayoutHelper();
             layoutHelper.setAspectRatio(4);
             adapters.add(new SubAdapter(this, layoutHelper, 1, new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 100)));
@@ -332,7 +332,7 @@ public class OnePlusNLayoutActivity extends Activity {
 
         if (SCROLL_FIX_LAYOUT) {
             ScrollFixLayoutHelper layoutHelper = new ScrollFixLayoutHelper(FixLayoutHelper.BOTTOM_RIGHT, 20, 20);
-            layoutHelper.setShowType(ScrollFixLayoutHelper.SHOW_ON_LEAVE);
+            layoutHelper.setShowType(ScrollFixLayoutHelper.SHOW_ALWAYS);
             adapters.add(new SubAdapter(this, layoutHelper, 1) {
                 @Override
                 public void onBindViewHolder(MainViewHolder holder, int position) {

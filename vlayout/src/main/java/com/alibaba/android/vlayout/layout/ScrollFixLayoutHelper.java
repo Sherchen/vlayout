@@ -29,7 +29,7 @@ import com.alibaba.android.vlayout.LayoutManagerHelper;
 /**
  * Absolute layout which only shows after scrolling to its' position,
  * it'll layout View based on leftMargin/topMargin/rightMargin/bottomMargin.
- *
+ * @sherchen 这里有滚动到制定的位置，才会显示出来
  * @author villadora
  * @since 1.0.0
  */
@@ -37,9 +37,11 @@ public class ScrollFixLayoutHelper extends FixLayoutHelper {
 
     private static final String TAG = "ScrollFixLayoutHelper";
 
-
+    /**不管任何情况都显示，相当于会固定在一个位置，但是不能被拖拽*/
     public static final int SHOW_ALWAYS = 0;
+    /**当指定位置进入到visible显示*/
     public static final int SHOW_ON_ENTER = 1;
+    /**当指定位置进入到unvisible显示*/
     public static final int SHOW_ON_LEAVE = 2;
 
 

@@ -51,6 +51,7 @@ public class StickyLayoutHelper extends FixAreaLayoutHelper {
     private int mPos = -1;
 
     private boolean mStickyStart = true;
+    /**固定位置的偏移距离*/
     private int mOffset = 0;
 
 

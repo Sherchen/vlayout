@@ -255,14 +255,14 @@ public class VLayoutActivity extends Activity {
             });
         }
 
-        if (STICKY_LAYOUT) {
+        if (STICKY_LAYOUT) {//9
             StickyLayoutHelper layoutHelper = new StickyLayoutHelper();
             layoutHelper.setOffset(100);
             layoutHelper.setAspectRatio(4);
             adapters.add(new SubAdapter(this, layoutHelper, 1, new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 100)));
         }
 
-        if (SINGLE_LAYOUT) {
+        if (SINGLE_LAYOUT) {//10
             SingleLayoutHelper layoutHelper = new SingleLayoutHelper();
             layoutHelper.setBgColor(Color.rgb(135, 225, 90));
             layoutHelper.setAspectRatio(4);
@@ -271,7 +271,7 @@ public class VLayoutActivity extends Activity {
             adapters.add(new SubAdapter(this, layoutHelper, 1, new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 100)));
         }
 
-        if (COLUMN_LAYOUT) {
+        if (COLUMN_LAYOUT) {//11
             ColumnLayoutHelper layoutHelper = new ColumnLayoutHelper();
             layoutHelper.setBgColor(0xff00f0f0);
             layoutHelper.setWeights(new float[]{40.0f, Float.NaN, 40});
@@ -360,7 +360,7 @@ public class VLayoutActivity extends Activity {
 
             layoutHelper = new FixLayoutHelper(FixLayoutHelper.TOP_RIGHT, 20, 20);
 
-            adapters.add(new SubAdapter(this, layoutHelper, 1) {
+            adapters.add(new SubAdapter(this, layoutHelper, 1) {//29
                 @Override
                 public void onBindViewHolder(MainViewHolder holder, int position) {
                     super.onBindViewHolder(holder, position);
