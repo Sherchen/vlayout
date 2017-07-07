@@ -28,13 +28,13 @@ apply plugin: 'com.android.application'
 
 
 android {
-    compileSdkVersion Integer.parseInt(System.properties['compileSdkVersion'])
-    buildToolsVersion System.properties['buildToolsVersion']
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
 
     defaultConfig {
         applicationId "com.alibab.android.vlayout.example"
         minSdkVersion 14
-        targetSdkVersion Integer.parseInt(System.properties['targetSdkVersion'])
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
